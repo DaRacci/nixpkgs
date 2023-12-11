@@ -3,6 +3,7 @@
 , callPackage
 , fetchurl
 
+, pkgs
 , jdk
 , zlib
 , python3
@@ -21,7 +22,6 @@
 , libgcc
 , lttng-ust_2_12
 , xz
-
 , vmopts ? null
 }:
 
@@ -216,8 +216,8 @@ rec {
       openssl
       libxcrypt-legacy
       xorg.libX11
-      libGL
-      fontconfig
+      pkgs.libGL
+      pkgs.fontconfig
     ] ++ lib.optionals (stdenv.isLinux && stdenv.isAarch64) [
       expat
       libxml2
