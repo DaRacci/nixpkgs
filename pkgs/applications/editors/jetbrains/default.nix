@@ -215,7 +215,7 @@ rec {
       python3
       openssl
       libxcrypt-legacy
-      xorg.libX11
+      pkgs.xorg.libX11
       pkgs.libGL
       pkgs.fontconfig
     ] ++ lib.optionals (stdenv.isLinux && stdenv.isAarch64) [
