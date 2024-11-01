@@ -13,7 +13,7 @@ stdenv.mkDerivation rec {
     owner = "JacKeTUs";
     repo = "universal-pidff";
     rev = "refs/tags/${version}";
-    hash = "sha256-DptLqyjfRCpkbyFAQI8sylyKu2XyZZGrSITva9vcXGQ=";
+    hash = "sha256-BViobWl+9ypTcQJWtZ9pbeU4cmHcFNZWlsmQUOO64Vc=";
   };
 
   postPatch = ''
