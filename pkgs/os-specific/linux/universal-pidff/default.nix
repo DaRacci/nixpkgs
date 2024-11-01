@@ -7,7 +7,7 @@
 
 stdenv.mkDerivation rec {
   pname = "universal-pidff";
-  version = "0.0.8";
+  version = "0.0.10";
 
   src = fetchFromGitHub {
     owner = "JacKeTUs";
